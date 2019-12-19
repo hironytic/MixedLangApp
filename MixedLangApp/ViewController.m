@@ -24,6 +24,8 @@
 //
 
 #import "ViewController.h"
+#import "ObjCCalculator.h"
+#import "MixedLangApp-Swift.h"
 
 @interface ViewController ()
 
@@ -34,6 +36,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    ObjCCalculator *calc = [[ObjCCalculator alloc] initWithNumber:100];
+    NSInteger num = [calc calculateWithNumber:20];
+    NSLog(@"num = %ld", (long)num);
+    
+    SwiftFacade *facade = [[SwiftFacade alloc] init];
+    NSInteger integer = [facade numberOf:1];
+    NSLog(@"integer = %ld", (long)integer);
 }
 
 

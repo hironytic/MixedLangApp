@@ -1,5 +1,5 @@
 //
-// ObjCLib1.h
+// ObjCCalculator.m
 // ObjCLib1
 //
 // Copyright (c) 2019 Hironori Ichimiya <hiron@hironytic.com>
@@ -23,8 +23,24 @@
 // THE SOFTWARE.
 //
 
-#import <Foundation/Foundation.h>
+#import "ObjCCalculator.h"
 
-@interface ObjCLib1 : NSObject
+@interface ObjCCalculator ()
+@property(nonatomic, assign) NSInteger number;
+@end
+
+@implementation ObjCCalculator
+
+- (instancetype)initWithNumber:(NSInteger)number {
+    self = [super init];
+    if (self != nil) {
+        _number = number;
+    }
+    return self;
+}
+
+- (NSInteger)calculateWithNumber:(NSInteger)number {
+    return number + self.number;
+}
 
 @end

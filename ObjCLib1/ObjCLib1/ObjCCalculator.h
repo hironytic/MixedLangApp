@@ -1,5 +1,5 @@
 //
-// ObjCLib1.m
+// ObjCCalculator.h
 // ObjCLib1
 //
 // Copyright (c) 2019 Hironori Ichimiya <hiron@hironytic.com>
@@ -23,8 +23,17 @@
 // THE SOFTWARE.
 //
 
-#import "ObjCLib1.h"
+#import <Foundation/Foundation.h>
 
-@implementation ObjCLib1
+NS_ASSUME_NONNULL_BEGIN
+
+@interface ObjCCalculator : NSObject
+
+- (instancetype)initWithNumber:(NSInteger)number;
+
+- (NSInteger)calculateWithNumber:(NSInteger)number;
+
 
 @end
+
+NS_ASSUME_NONNULL_END

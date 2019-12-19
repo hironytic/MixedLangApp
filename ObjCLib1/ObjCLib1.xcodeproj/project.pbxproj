@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		501B725123AB27E00018C027 /* ObjCLib1.m in Sources */ = {isa = PBXBuildFile; fileRef = 501B725023AB27E00018C027 /* ObjCLib1.m */; };
-		501B725223AB27E00018C027 /* ObjCLib1.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 501B724F23AB27E00018C027 /* ObjCLib1.h */; };
+		501B729723AB293D0018C027 /* ObjCCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 501B729623AB293D0018C027 /* ObjCCalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +17,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				501B725223AB27E00018C027 /* ObjCLib1.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,8 +24,8 @@
 
 /* Begin PBXFileReference section */
 		501B724C23AB27E00018C027 /* libObjCLib1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjCLib1.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		501B724F23AB27E00018C027 /* ObjCLib1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCLib1.h; sourceTree = "<group>"; };
-		501B725023AB27E00018C027 /* ObjCLib1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCLib1.m; sourceTree = "<group>"; };
+		501B729523AB293D0018C027 /* ObjCCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCCalculator.h; sourceTree = "<group>"; };
+		501B729623AB293D0018C027 /* ObjCCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCCalculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +58,8 @@
 		501B724E23AB27E00018C027 /* ObjCLib1 */ = {
 			isa = PBXGroup;
 			children = (
-				501B724F23AB27E00018C027 /* ObjCLib1.h */,
-				501B725023AB27E00018C027 /* ObjCLib1.m */,
+				501B729523AB293D0018C027 /* ObjCCalculator.h */,
+				501B729623AB293D0018C027 /* ObjCCalculator.m */,
 			);
 			path = ObjCLib1;
 			sourceTree = "<group>";
@@ -123,7 +121,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				501B725123AB27E00018C027 /* ObjCLib1.m in Sources */,
+				501B729723AB293D0018C027 /* ObjCCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

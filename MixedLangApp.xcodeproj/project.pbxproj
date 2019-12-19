@@ -15,6 +15,7 @@
 		501B723A23AB26680018C027 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501B723823AB26680018C027 /* LaunchScreen.storyboard */; };
 		501B723D23AB26680018C027 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 501B723C23AB26680018C027 /* main.m */; };
 		501B729423AB288C0018C027 /* SwiftFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501B729323AB288C0018C027 /* SwiftFacade.swift */; };
+		501B729923AB29CE0018C027 /* libObjCLib1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 501B725D23AB27E10018C027 /* libObjCLib1.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				501B729923AB29CE0018C027 /* libObjCLib1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +82,7 @@
 				501B725823AB27E00018C027 /* ObjCLib1.xcodeproj */,
 				501B722923AB26600018C027 /* MixedLangApp */,
 				501B722823AB26600018C027 /* Products */,
+				501B729823AB29CE0018C027 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +136,13 @@
 				501B729123AB28250018C027 /* libObjCLib2.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		501B729823AB29CE0018C027 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +339,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/ObjCLib1/**";
 			};
 			name = Debug;
 		};
@@ -380,6 +391,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/ObjCLib1/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
