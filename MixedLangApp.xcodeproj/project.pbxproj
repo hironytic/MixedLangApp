@@ -16,6 +16,30 @@
 		501B723D23AB26680018C027 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 501B723C23AB26680018C027 /* main.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		501B725C23AB27E10018C027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 501B725823AB27E00018C027 /* ObjCLib1.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 501B724C23AB27E00018C027;
+			remoteInfo = ObjCLib1;
+		};
+		501B727523AB27FD0018C027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 501B727123AB27FC0018C027 /* SwiftLib1.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 501B726723AB27FC0018C027;
+			remoteInfo = SwiftLib1;
+		};
+		501B729023AB28250018C027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 501B728C23AB28240018C027 /* ObjCLib2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 501B728023AB28240018C027;
+			remoteInfo = ObjCLib2;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		501B722723AB26600018C027 /* MixedLangApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixedLangApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		501B722A23AB26600018C027 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,6 +53,9 @@
 		501B723923AB26680018C027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		501B723B23AB26680018C027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		501B723C23AB26680018C027 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		501B725823AB27E00018C027 /* ObjCLib1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjCLib1.xcodeproj; path = ObjCLib1/ObjCLib1.xcodeproj; sourceTree = "<group>"; };
+		501B727123AB27FC0018C027 /* SwiftLib1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftLib1.xcodeproj; path = SwiftLib1/SwiftLib1.xcodeproj; sourceTree = "<group>"; };
+		501B728C23AB28240018C027 /* ObjCLib2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjCLib2.xcodeproj; path = ObjCLib2/ObjCLib2.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +72,9 @@
 		501B721E23AB26600018C027 = {
 			isa = PBXGroup;
 			children = (
+				501B728C23AB28240018C027 /* ObjCLib2.xcodeproj */,
+				501B727123AB27FC0018C027 /* SwiftLib1.xcodeproj */,
+				501B725823AB27E00018C027 /* ObjCLib1.xcodeproj */,
 				501B722923AB26600018C027 /* MixedLangApp */,
 				501B722823AB26600018C027 /* Products */,
 			);
@@ -74,6 +104,30 @@
 				501B723C23AB26680018C027 /* main.m */,
 			);
 			path = MixedLangApp;
+			sourceTree = "<group>";
+		};
+		501B725923AB27E00018C027 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				501B725D23AB27E10018C027 /* libObjCLib1.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		501B727223AB27FC0018C027 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				501B727623AB27FD0018C027 /* libSwiftLib1.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		501B728D23AB28240018C027 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				501B729123AB28250018C027 /* libObjCLib2.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,12 +175,50 @@
 			mainGroup = 501B721E23AB26600018C027;
 			productRefGroup = 501B722823AB26600018C027 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 501B725923AB27E00018C027 /* Products */;
+					ProjectRef = 501B725823AB27E00018C027 /* ObjCLib1.xcodeproj */;
+				},
+				{
+					ProductGroup = 501B728D23AB28240018C027 /* Products */;
+					ProjectRef = 501B728C23AB28240018C027 /* ObjCLib2.xcodeproj */;
+				},
+				{
+					ProductGroup = 501B727223AB27FC0018C027 /* Products */;
+					ProjectRef = 501B727123AB27FC0018C027 /* SwiftLib1.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				501B722623AB26600018C027 /* MixedLangApp */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		501B725D23AB27E10018C027 /* libObjCLib1.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libObjCLib1.a;
+			remoteRef = 501B725C23AB27E10018C027 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		501B727623AB27FD0018C027 /* libSwiftLib1.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSwiftLib1.a;
+			remoteRef = 501B727523AB27FD0018C027 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		501B729123AB28250018C027 /* libObjCLib2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libObjCLib2.a;
+			remoteRef = 501B729023AB28250018C027 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		501B722523AB26600018C027 /* Resources */ = {
