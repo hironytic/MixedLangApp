@@ -10,6 +10,23 @@
 		501B72AF23AB2D000018C027 /* SwiftCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501B72AE23AB2D000018C027 /* SwiftCalculator.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		501B72BB23AB2DFB0018C027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 501B72B723AB2DFB0018C027 /* ObjCLib1.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 501B724C23AB27E00018C027;
+			remoteInfo = ObjCLib1;
+		};
+		501B72BD23AB2E150018C027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 501B72B723AB2DFB0018C027 /* ObjCLib1.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 501B724B23AB27E00018C027;
+			remoteInfo = ObjCLib1;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		501B726523AB27FC0018C027 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -26,6 +43,7 @@
 		501B726723AB27FC0018C027 /* libSwiftLib1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSwiftLib1.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		501B72AD23AB2CFF0018C027 /* SwiftLib1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftLib1-Bridging-Header.h"; sourceTree = "<group>"; };
 		501B72AE23AB2D000018C027 /* SwiftCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCalculator.swift; sourceTree = "<group>"; };
+		501B72B723AB2DFB0018C027 /* ObjCLib1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjCLib1.xcodeproj; path = ../ObjCLib1/ObjCLib1.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +60,7 @@
 		501B725E23AB27FC0018C027 = {
 			isa = PBXGroup;
 			children = (
+				501B72B723AB2DFB0018C027 /* ObjCLib1.xcodeproj */,
 				501B726923AB27FC0018C027 /* SwiftLib1 */,
 				501B726823AB27FC0018C027 /* Products */,
 			);
@@ -64,6 +83,14 @@
 			path = SwiftLib1;
 			sourceTree = "<group>";
 		};
+		501B72B823AB2DFB0018C027 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				501B72BC23AB2DFB0018C027 /* libObjCLib1.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +105,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				501B72BE23AB2E150018C027 /* PBXTargetDependency */,
 			);
 			name = SwiftLib1;
 			productName = SwiftLib1;
@@ -111,12 +139,28 @@
 			mainGroup = 501B725E23AB27FC0018C027;
 			productRefGroup = 501B726823AB27FC0018C027 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 501B72B823AB2DFB0018C027 /* Products */;
+					ProjectRef = 501B72B723AB2DFB0018C027 /* ObjCLib1.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				501B726623AB27FC0018C027 /* SwiftLib1 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		501B72BC23AB2DFB0018C027 /* libObjCLib1.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libObjCLib1.a;
+			remoteRef = 501B72BB23AB2DFB0018C027 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		501B726323AB27FC0018C027 /* Sources */ = {
@@ -128,6 +172,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		501B72BE23AB2E150018C027 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjCLib1;
+			targetProxy = 501B72BD23AB2E150018C027 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		501B726C23AB27FC0018C027 /* Debug */ = {
@@ -187,6 +239,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../ObjCLib1/**";
 			};
 			name = Debug;
 		};
@@ -240,6 +293,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../ObjCLib1/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

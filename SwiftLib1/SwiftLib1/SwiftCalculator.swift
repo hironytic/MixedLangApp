@@ -26,13 +26,13 @@
 import Foundation
 
 public class SwiftCalculator {
-    private let number: Int
+    private let calc: ObjCCalculator
     
     public init(number: Int) {
-        self.number = number
+        calc = ObjCCalculator(number: number)
     }
     
     public func calculate(of number: Int) -> Int {
-        return number - self.number
+        return calc.calculate(withNumber: number)
     }
 }
