@@ -17,6 +17,7 @@
 		501B729423AB288C0018C027 /* SwiftFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501B729323AB288C0018C027 /* SwiftFacade.swift */; };
 		501B729923AB29CE0018C027 /* libObjCLib1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 501B725D23AB27E10018C027 /* libObjCLib1.a */; };
 		501B72B423AB2D410018C027 /* libSwiftLib1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 501B727623AB27FD0018C027 /* libSwiftLib1.a */; };
+		501B72C223AB2F7B0018C027 /* libObjCLib2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 501B729123AB28250018C027 /* libObjCLib2.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				501B72C223AB2F7B0018C027 /* libObjCLib2.a in Frameworks */,
 				501B729923AB29CE0018C027 /* libObjCLib1.a in Frameworks */,
 				501B72B423AB2D410018C027 /* libSwiftLib1.a in Frameworks */,
 			);
@@ -416,6 +418,10 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/ObjCLib1/**",
+					"$(SRCROOT)/SwiftLib1/**",
+				);
 			};
 			name = Debug;
 		};
@@ -436,6 +442,10 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "MixedLangApp/MixedLangApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/ObjCLib1/**",
+					"$(SRCROOT)/SwiftLib1/**",
+				);
 			};
 			name = Release;
 		};
