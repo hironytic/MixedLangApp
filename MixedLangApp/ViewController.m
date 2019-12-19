@@ -24,8 +24,9 @@
 //
 
 #import "ViewController.h"
-#import "ObjCCalculator.h"
 #import "MixedLangApp-Swift.h"
+
+@import ObjCLib1;
 
 @interface ViewController ()
 

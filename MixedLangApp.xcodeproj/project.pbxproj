@@ -42,6 +42,20 @@
 			remoteGlobalIDString = 501B728023AB28240018C027;
 			remoteInfo = ObjCLib2;
 		};
+		501B72CB23AB6AF60018C027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 501B727123AB27FC0018C027 /* SwiftLib1.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 501B726623AB27FC0018C027;
+			remoteInfo = SwiftLib1;
+		};
+		501B72CD23AB6AF60018C027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 501B725823AB27E00018C027 /* ObjCLib1.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 501B724B23AB27E00018C027;
+			remoteInfo = ObjCLib1;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -163,6 +177,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				501B72CC23AB6AF60018C027 /* PBXTargetDependency */,
+				501B72CE23AB6AF60018C027 /* PBXTargetDependency */,
 			);
 			name = MixedLangApp;
 			productName = MixedLangApp;
@@ -267,6 +283,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		501B72CC23AB6AF60018C027 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLib1;
+			targetProxy = 501B72CB23AB6AF60018C027 /* PBXContainerItemProxy */;
+		};
+		501B72CE23AB6AF60018C027 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjCLib1;
+			targetProxy = 501B72CD23AB6AF60018C027 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		501B723323AB26600018C027 /* Main.storyboard */ = {
