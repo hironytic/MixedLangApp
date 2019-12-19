@@ -1,5 +1,5 @@
 //
-// SwiftLib1.swift
+// SwiftCalculator.swift
 // SwiftLib1
 //
 // Copyright (c) 2019 Hironori Ichimiya <hiron@hironytic.com>
@@ -23,6 +23,16 @@
 // THE SOFTWARE.
 //
 
-class SwiftLib1 {
+import Foundation
 
+public class SwiftCalculator {
+    private let number: Int
+    
+    public init(number: Int) {
+        self.number = number
+    }
+    
+    public func calculate(of number: Int) -> Int {
+        return number - self.number
+    }
 }

@@ -24,12 +24,14 @@
 //
 
 import Foundation
+import SwiftLib1
 
 @objc
 class SwiftFacade: NSObject {
     
     @objc
     func number(of num: Int) -> Int {
-        return num + 10
+        let calc = SwiftCalculator(number: 100)
+        return calc.calculate(of: num)
     }
 }

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		501B726B23AB27FC0018C027 /* SwiftLib1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501B726A23AB27FC0018C027 /* SwiftLib1.swift */; };
+		501B72AF23AB2D000018C027 /* SwiftCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501B72AE23AB2D000018C027 /* SwiftCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,8 @@
 
 /* Begin PBXFileReference section */
 		501B726723AB27FC0018C027 /* libSwiftLib1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSwiftLib1.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		501B726A23AB27FC0018C027 /* SwiftLib1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLib1.swift; sourceTree = "<group>"; };
+		501B72AD23AB2CFF0018C027 /* SwiftLib1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftLib1-Bridging-Header.h"; sourceTree = "<group>"; };
+		501B72AE23AB2D000018C027 /* SwiftCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +58,8 @@
 		501B726923AB27FC0018C027 /* SwiftLib1 */ = {
 			isa = PBXGroup;
 			children = (
-				501B726A23AB27FC0018C027 /* SwiftLib1.swift */,
+				501B72AE23AB2D000018C027 /* SwiftCalculator.swift */,
+				501B72AD23AB2CFF0018C027 /* SwiftLib1-Bridging-Header.h */,
 			);
 			path = SwiftLib1;
 			sourceTree = "<group>";
@@ -94,6 +96,7 @@
 				TargetAttributes = {
 					501B726623AB27FC0018C027 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -120,7 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				501B726B23AB27FC0018C027 /* SwiftLib1.swift in Sources */,
+				501B72AF23AB2D000018C027 /* SwiftCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,11 +247,19 @@
 		501B726F23AB27FC0018C027 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EPZSBGGQZS;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftLib1/SwiftLib1-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -257,11 +268,18 @@
 		501B727023AB27FC0018C027 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EPZSBGGQZS;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftLib1/SwiftLib1-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
