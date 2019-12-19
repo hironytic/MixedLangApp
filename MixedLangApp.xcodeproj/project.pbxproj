@@ -14,6 +14,7 @@
 		501B723723AB26680018C027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 501B723623AB26680018C027 /* Assets.xcassets */; };
 		501B723A23AB26680018C027 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501B723823AB26680018C027 /* LaunchScreen.storyboard */; };
 		501B723D23AB26680018C027 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 501B723C23AB26680018C027 /* main.m */; };
+		501B729423AB288C0018C027 /* SwiftFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501B729323AB288C0018C027 /* SwiftFacade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		501B725823AB27E00018C027 /* ObjCLib1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjCLib1.xcodeproj; path = ObjCLib1/ObjCLib1.xcodeproj; sourceTree = "<group>"; };
 		501B727123AB27FC0018C027 /* SwiftLib1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftLib1.xcodeproj; path = SwiftLib1/SwiftLib1.xcodeproj; sourceTree = "<group>"; };
 		501B728C23AB28240018C027 /* ObjCLib2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjCLib2.xcodeproj; path = ObjCLib2/ObjCLib2.xcodeproj; sourceTree = "<group>"; };
+		501B729223AB288C0018C027 /* MixedLangApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixedLangApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		501B729323AB288C0018C027 /* SwiftFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFacade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +100,13 @@
 				501B722E23AB26600018C027 /* SceneDelegate.m */,
 				501B723023AB26600018C027 /* ViewController.h */,
 				501B723123AB26600018C027 /* ViewController.m */,
+				501B729323AB288C0018C027 /* SwiftFacade.swift */,
 				501B723323AB26600018C027 /* Main.storyboard */,
 				501B723623AB26680018C027 /* Assets.xcassets */,
 				501B723823AB26680018C027 /* LaunchScreen.storyboard */,
 				501B723B23AB26680018C027 /* Info.plist */,
 				501B723C23AB26680018C027 /* main.m */,
+				501B729223AB288C0018C027 /* MixedLangApp-Bridging-Header.h */,
 			);
 			path = MixedLangApp;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 				TargetAttributes = {
 					501B722623AB26600018C027 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -240,6 +246,7 @@
 			files = (
 				501B723223AB26600018C027 /* ViewController.m in Sources */,
 				501B722C23AB26600018C027 /* AppDelegate.m in Sources */,
+				501B729423AB288C0018C027 /* SwiftFacade.swift in Sources */,
 				501B723D23AB26680018C027 /* main.m in Sources */,
 				501B722F23AB26600018C027 /* SceneDelegate.m in Sources */,
 			);
@@ -381,6 +388,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EPZSBGGQZS;
 				INFOPLIST_FILE = MixedLangApp/Info.plist;
@@ -390,6 +398,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hironytic.exp.MixedLangApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixedLangApp/MixedLangApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -398,6 +409,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EPZSBGGQZS;
 				INFOPLIST_FILE = MixedLangApp/Info.plist;
@@ -407,6 +419,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hironytic.exp.MixedLangApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixedLangApp/MixedLangApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
