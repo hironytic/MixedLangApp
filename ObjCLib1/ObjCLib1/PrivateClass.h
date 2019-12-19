@@ -1,6 +1,6 @@
 //
-// SwiftCalculator.swift
-// SwiftLib1
+// PrivateClass.h
+// ObjCLib1
 //
 // Copyright (c) 2019 Hironori Ichimiya <hiron@hironytic.com>
 //
@@ -23,17 +23,12 @@
 // THE SOFTWARE.
 //
 
-import Foundation
-import ObjCLib1
+#import <Foundation/Foundation.h>
 
-public class SwiftCalculator {
-    private let calc: ObjCCalculator
-    
-    public init(number: Int) {
-        calc = ObjCCalculator(number: number)
-    }
-    
-    public func calculate(of number: Int) -> Int {
-        return calc.calculate(withNumber: number)
-    }
-}
+NS_ASSUME_NONNULL_BEGIN
+
+@interface PrivateClass : NSObject
+
+@end
+
+NS_ASSUME_NONNULL_END

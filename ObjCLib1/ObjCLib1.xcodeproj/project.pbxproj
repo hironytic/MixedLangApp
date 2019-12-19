@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		501B729723AB293D0018C027 /* ObjCCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 501B729623AB293D0018C027 /* ObjCCalculator.m */; };
+		501B72CA23AB68260018C027 /* PrivateClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 501B72C923AB68260018C027 /* PrivateClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +27,10 @@
 		501B724C23AB27E00018C027 /* libObjCLib1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjCLib1.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		501B729523AB293D0018C027 /* ObjCCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCCalculator.h; sourceTree = "<group>"; };
 		501B729623AB293D0018C027 /* ObjCCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCCalculator.m; sourceTree = "<group>"; };
+		501B72C623AB65110018C027 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		501B72C723AB67D60018C027 /* ObjCLib1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCLib1.h; sourceTree = "<group>"; };
+		501B72C823AB68260018C027 /* PrivateClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateClass.h; sourceTree = "<group>"; };
+		501B72C923AB68260018C027 /* PrivateClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +47,7 @@
 		501B724323AB27E00018C027 = {
 			isa = PBXGroup;
 			children = (
+				501B72C623AB65110018C027 /* module.modulemap */,
 				501B724E23AB27E00018C027 /* ObjCLib1 */,
 				501B724D23AB27E00018C027 /* Products */,
 			);
@@ -60,6 +66,9 @@
 			children = (
 				501B729523AB293D0018C027 /* ObjCCalculator.h */,
 				501B729623AB293D0018C027 /* ObjCCalculator.m */,
+				501B72C723AB67D60018C027 /* ObjCLib1.h */,
+				501B72C823AB68260018C027 /* PrivateClass.h */,
+				501B72C923AB68260018C027 /* PrivateClass.m */,
 			);
 			path = ObjCLib1;
 			sourceTree = "<group>";
@@ -121,6 +130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				501B72CA23AB68260018C027 /* PrivateClass.m in Sources */,
 				501B729723AB293D0018C027 /* ObjCCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -41,7 +41,6 @@
 
 /* Begin PBXFileReference section */
 		501B726723AB27FC0018C027 /* libSwiftLib1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSwiftLib1.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		501B72AD23AB2CFF0018C027 /* SwiftLib1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftLib1-Bridging-Header.h"; sourceTree = "<group>"; };
 		501B72AE23AB2D000018C027 /* SwiftCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCalculator.swift; sourceTree = "<group>"; };
 		501B72B723AB2DFB0018C027 /* ObjCLib1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjCLib1.xcodeproj; path = ../ObjCLib1/ObjCLib1.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				501B72AE23AB2D000018C027 /* SwiftCalculator.swift */,
-				501B72AD23AB2CFF0018C027 /* SwiftLib1-Bridging-Header.h */,
 			);
 			path = SwiftLib1;
 			sourceTree = "<group>";
@@ -312,7 +310,6 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "SwiftLib1/SwiftLib1-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -333,7 +330,6 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "SwiftLib1/SwiftLib1-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
