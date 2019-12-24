@@ -1,4 +1,4 @@
 module ObjCLib1 {
-    umbrella "ObjCLib1"
+    umbrella header "ObjCLib1.h"
     export *
 }

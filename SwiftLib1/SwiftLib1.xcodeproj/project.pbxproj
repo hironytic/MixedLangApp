@@ -237,7 +237,6 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../ObjCLib1/**";
 			};
 			name = Debug;
 		};
@@ -291,7 +290,6 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../ObjCLib1/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

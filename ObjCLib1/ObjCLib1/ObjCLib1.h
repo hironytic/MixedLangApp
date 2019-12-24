@@ -24,3 +24,4 @@
 //
 
 #import "ObjCCalculator.h"
+#import "PrivateClass.h"

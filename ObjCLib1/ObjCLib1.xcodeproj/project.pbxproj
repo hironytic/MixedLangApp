@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		501B729723AB293D0018C027 /* ObjCCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 501B729623AB293D0018C027 /* ObjCCalculator.m */; };
 		501B72CA23AB68260018C027 /* PrivateClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 501B72C923AB68260018C027 /* PrivateClass.m */; };
+		868D6AA423B1C3E20001FE97 /* module.modulemap in CopyFiles */ = {isa = PBXBuildFile; fileRef = 501B72C623AB65110018C027 /* module.modulemap */; };
+		868D6AA823B1D50B0001FE97 /* ObjCCalculator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 501B729523AB293D0018C027 /* ObjCCalculator.h */; };
+		868D6AAA23B1DEA90001FE97 /* ObjCLib1.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 501B72C723AB67D60018C027 /* ObjCLib1.h */; };
+		868D6AAB23B1DEA90001FE97 /* PrivateClass.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 501B72C823AB68260018C027 /* PrivateClass.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,6 +22,10 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				868D6AAA23B1DEA90001FE97 /* ObjCLib1.h in CopyFiles */,
+				868D6AAB23B1DEA90001FE97 /* PrivateClass.h in CopyFiles */,
+				868D6AA823B1D50B0001FE97 /* ObjCCalculator.h in CopyFiles */,
+				868D6AA423B1C3E20001FE97 /* module.modulemap in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +55,6 @@
 		501B724323AB27E00018C027 = {
 			isa = PBXGroup;
 			children = (
-				501B72C623AB65110018C027 /* module.modulemap */,
 				501B724E23AB27E00018C027 /* ObjCLib1 */,
 				501B724D23AB27E00018C027 /* Products */,
 			);
@@ -69,6 +76,7 @@
 				501B72C723AB67D60018C027 /* ObjCLib1.h */,
 				501B72C823AB68260018C027 /* PrivateClass.h */,
 				501B72C923AB68260018C027 /* PrivateClass.m */,
+				501B72C623AB65110018C027 /* module.modulemap */,
 			);
 			path = ObjCLib1;
 			sourceTree = "<group>";
@@ -253,6 +261,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EPZSBGGQZS;
+				MODULEMAP_FILE = "$(SRCROOT)/ObjCLib1/module.modulemap";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -265,6 +274,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EPZSBGGQZS;
+				MODULEMAP_FILE = "$(SRCROOT)/ObjCLib1/module.modulemap";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
