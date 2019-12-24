@@ -25,6 +25,7 @@
 
 #import "ViewController.h"
 #import "MixedLangApp-Swift.h"
+#import "PlusPlus.h"
 
 @import ObjCLib1;
 
@@ -45,6 +46,10 @@
     SwiftFacade *facade = [[SwiftFacade alloc] init];
     NSInteger integer = [facade numberOf:1];
     NSLog(@"integer = %ld", (long)integer);
+    
+    PlusPlus *plusplus = [[PlusPlus alloc] init];
+    NSInteger p = [plusplus number];
+    NSLog(@"p = %ld", (long)p);
 }
 
 

@@ -17,6 +17,7 @@
 		501B729423AB288C0018C027 /* SwiftFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501B729323AB288C0018C027 /* SwiftFacade.swift */; };
 		501B729923AB29CE0018C027 /* libObjCLib1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 501B725D23AB27E10018C027 /* libObjCLib1.a */; };
 		501B72B423AB2D410018C027 /* libSwiftLib1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 501B727623AB27FD0018C027 /* libSwiftLib1.a */; };
+		86744C5623B22934004DEFC5 /* PlusPlus.mm in Sources */ = {isa = PBXBuildFile; fileRef = 86744C5523B22934004DEFC5 /* PlusPlus.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		501B727123AB27FC0018C027 /* SwiftLib1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftLib1.xcodeproj; path = SwiftLib1/SwiftLib1.xcodeproj; sourceTree = "<group>"; };
 		501B729223AB288C0018C027 /* MixedLangApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixedLangApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		501B729323AB288C0018C027 /* SwiftFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFacade.swift; sourceTree = "<group>"; };
+		86744C5423B22934004DEFC5 /* PlusPlus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlusPlus.h; sourceTree = "<group>"; };
+		86744C5523B22934004DEFC5 /* PlusPlus.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PlusPlus.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				501B722E23AB26600018C027 /* SceneDelegate.m */,
 				501B723023AB26600018C027 /* ViewController.h */,
 				501B723123AB26600018C027 /* ViewController.m */,
+				86744C5423B22934004DEFC5 /* PlusPlus.h */,
+				86744C5523B22934004DEFC5 /* PlusPlus.mm */,
 				501B729323AB288C0018C027 /* SwiftFacade.swift */,
 				501B723323AB26600018C027 /* Main.storyboard */,
 				501B723623AB26680018C027 /* Assets.xcassets */,
@@ -249,6 +254,7 @@
 				501B729423AB288C0018C027 /* SwiftFacade.swift in Sources */,
 				501B723D23AB26680018C027 /* main.m in Sources */,
 				501B722F23AB26600018C027 /* SceneDelegate.m in Sources */,
+				86744C5623B22934004DEFC5 /* PlusPlus.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +347,10 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fcxx-modules",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -392,6 +402,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fcxx-modules",
+				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
