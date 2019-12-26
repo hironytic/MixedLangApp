@@ -177,7 +177,7 @@
 		501B721F23AB26600018C027 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = Hironytic;
 				TargetAttributes = {
 					501B722623AB26600018C027 = {
@@ -407,6 +407,7 @@
 					"-fcxx-modules",
 				);
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
